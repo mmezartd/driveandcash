@@ -1,0 +1,28 @@
+.viejito{
+	background: $color2;
+	height: 50vh;
+	padding: 2rem 1rem;
+	position: relative;
+	p{
+		display: block;
+		float: none;
+		font-size: 0.8em;
+		position: relative;
+		z-index: 2;
+		width: 70%;
+	}
+	.quiero{
+		display: block;
+		float: left;
+		font-size: 0.9333333333333em;
+		line-height: 0.9;
+		max-width: 10rem;
+	}
+	.autoazul{
+		position: absolute;
+		max-width: 15rem;
+		z-index: 0;
+		right:0;
+		bottom: 0;
+	}
+}

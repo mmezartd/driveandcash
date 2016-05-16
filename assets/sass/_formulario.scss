@@ -1,0 +1,77 @@
+.paso2{
+	background: $grisc;
+	.logo{
+		display: block;
+		margin: 0 auto;
+		margin-top: 3em;
+		margin-bottom: 2em;
+		width: 10rem;
+	}
+
+	.panel{
+		background: $color2;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		margin: auto;
+		margin-bottom: 1rem;
+		padding: 1.5rem;
+		width: 90%;
+		transition: all linear 0.6s;
+		p{
+			color: $azul;
+			font-size: 0.8em;
+			text-align: center;
+		}
+		form{
+			p{
+				color: $gris;
+				font-size: 0.7rem;
+			}
+		}
+		select, input[type=text], input[type=tel], input[type=email] {
+			background: $grisc;
+			border: none;
+		    border-radius: 50px;
+		    color: $gris3;
+		    font-size: 0.8em;
+		    margin: 0.6em 0;
+		    padding: 0.5rem;
+		    width: 100%;
+		}
+
+		/* validaciones */
+		.paso1 .ng-touched.ng-invalid{
+			color: red;
+		}
+		select.ng-touched.ng-invalid, input[type=text].ng-touched.ng-invalid, input[type=tel].ng-touched.ng-invalid, input[type=email].ng-touched.ng-invalid{
+			color: red;
+		}
+		.error{
+			color: red;
+		}
+	}
+	.uno{
+		transition: all linear 0.6s;
+	}
+	.dos {
+		transition: all linear 0.6s;
+		span{
+			font-size: 0.7em;
+			letter-spacing: -0.02em;
+		}
+	}
+	.uno.ng-hide{
+		opacity: 0;
+	}
+	.dos.ng-hide{
+		@extend .uno.ng-hide;
+	}
+	.dos.ng-show{
+		opacity: 1;
+	}
+	footer{
+		background: $grisc;
+		p{
+			color: $gris;
+		}
+	}
+}

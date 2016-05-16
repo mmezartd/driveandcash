@@ -1,0 +1,37 @@
+.como{
+	color: $gris;
+	padding: 1rem;
+	.bullets{
+		align-content: stretch;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.item{
+		text-align: center;
+		margin: 1rem;
+		width: 100%;
+		img{
+			margin-bottom: 1em;
+		}
+		p{
+			font-size: 0.8em;
+		}
+	}
+	.quiero{
+		font-size: 0.9333333333333em;
+		line-height: 0.9;
+		max-width: 13rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.como{
+		.item{
+			-webkit-flex: 1;
+		    flex: 1;
+		    -webkit-flex-basis: 0;
+		    flex-basis: 0;
+		}
+	}
+}

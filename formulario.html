@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="driveLand">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Drive and Cash</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body ng-controller="formCtrl" class="paso2">
+	<main>
+		<div class="contenedor">
+			<img src="assets/img/logo-drive.svg" alt="Logo Cash and Drive" class="logo">
+			<div class="panel uno" ng-show="showForm1">
+				<p>Para obtener tu dinero primero debemos conocer tu auto.</p>
+				<form accept-charset="utf-8" name="paso1" class="paso1" ng-submit="form1()" novalidate>
+					<select name="marca" ng-model="data.marca" required>
+						<option value="">¿Cuál es la marca de tu auto?</option>
+						<option value="audi">Audi</option>
+						<option value="chevrolet">Chevrolet</option>
+						<option value="ford">Ford</option>
+						<option value="honda">Honda</option>
+						<option value="mazda">Mazda</option>
+						<option value="seat">Seat</option>
+						<option value="volkswagen">Volkswagen</option>
+						<option value="otro">Otro</option>
+					</select>
+					<p class="error" ng-show="paso1.marca.$invalid && paso1.marca.$touched">Elige la marca de tu auto. Es requerida.</p>
+					<input type="text" name="modelo" value="" placeholder="¿Modelo? Jetta, León, A1, etc..." ng-pattern="/^([a-zA-Z ñáéíóúÑÁÉÍÓÚ0-9-_])*$/" ng-model="modelo" required ng-init="modelo=''" value="">
+					<p class="error" ng-show="paso1.modelo.$touched && paso1.modelo.$invalid-required">Escribe el modelo. Es requerido.</p>
+					<p class="error" ng-show="paso1.modelo.$invalid-pattern && paso1.modelo.$touched && paso1.modelo.$valid-required">Escribe solo alfanuméricos.</p>
+					<div>
+						<rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>
+					</div>
+					<div>
+						<p>¿Tienes la factura original del auto?</p>
+						<div class="flex">
+							<span class="item">
+								<input type="radio" name="factura" ng-model="data.factura" value="Si" id="fact1"><label for="fact1">Si</label>
+							</span>
+							<span class="item">
+								<input type="radio" name="factura" ng-model="data.factura" value="No" id="fact2"><label for="fact2">No</label>
+							</span>
+						</div>
+						<p class="error" ng-hide="fvalid">Selecciona la factura</p>
+					</div>
+					<div>
+						<p>¿Tu tenencia esta al corriente?</p>
+						<div class="flex">
+							<span class="item">
+								<input type="radio" name="tenencia" value="Si" id="fact3" ng-model="data.tenencia" ng-required="!data.tenencia"><label for="fact3">Si</label>
+							</span>
+							<span class="item">
+								<input type="radio" name="tenencia" value="No" id="fact4" ng-model="data.tenencia" ng-required="!data.tenencia"><label for="fact4">No</label>
+							</span>
+						</div>
+						<p class="error" ng-hide="tvalid">Selecciona la tenencia</p>
+					</div>
+					<button class="quiero waves-effect waves-button waves-float waves-dark" type="submit">Quiero cash</button>
+					<p>*D&C trabaja con facturas originales y modelos superiores a 2007</p>
+				</form>
+			</div>
+			<div class="panel dos" ng-show="showMe">
+				<p>Ahora queremos saber un poco sobre tí.</p>
+				<span>Déjanos tus datos y en breve nos comunicaremos contigo</span>
+				<form accept-charset="utf-8" novalidate name="paso2" ng-submit="form2">
+					<input type="text" name="nombre" value="" placeholder="Nombre Completo" ng-model="nombre" required ng-pattern="/^([a-zA-Z ñáéíóúÑÁÉÍÓÚ])*$/">
+					<p class="error" ng-show="paso2.nombre.$touched && paso2.nombre.$invalid-required">Escribe el nombre. Es requerido.</p>
+					<p class="error" ng-show="paso2.nombre.$invalid-pattern && paso2.nombre.$touched && paso2.nombre.$valid-required">El nombre debe de contener solo letras</p>
+					<input type="tel" name="celular" value="" placeholder="Teléfono Celular" ng-model="celular" required maxlength="10" ng-pattern="/^[1-9]+[0-9]*$/">
+					<p class="error" ng-show="paso2.celular.$touched && paso2.celular.$invalid-required">Escribe tu número celular. Es requerido.</p>
+					<p class="error" ng-show="paso2.celular.$invalid-pattern && paso2.celular.$touched && paso2.celular.$valid-required">El celular debe de contener solo números</p>
+					<input type="tel" name="telefono" value="" placeholder="Teléfono Fijo" ng-model="telefono" required maxlength="10" ng-pattern="/^[1-9]+[0-9]*$/">
+					<p class="error" ng-show="paso2.telefono.$touched && paso2.telefono.$invalid-required">Escribe tu número de teléfono. Es requerido.</p>
+					<p class="error" ng-show="paso2.telefono.$invalid-pattern && paso2.telefono.$touched && paso2.telefono.$valid-required">El teléfono debe de contener solo números</p>
+					<input type="email" name="email" value="" placeholder="Correo Electrónico" ng-model="email" required maxlength="40">
+					<p class="error" ng-show="paso2.email.$touched && paso2.email.$invalid-required && paso2.email.$invalid">Escribe el correo electrónico. Es requerido.</p>
+					<p class="error" ng-show="paso2.email.$error.email && paso2.email.$touched && paso2.email.$valid-required">El correo electrónico no es válido.</p>
+					<input type="tel" name="cp" value="" placeholder="Código Postal" ng-model="cp" required maxlength="5" > <p class="error" ng-show="paso2.cp.$touched && paso2.cp.$invalid-required">Escribe tu código postal. Es requerido.</p>
+					<p class="error" ng-show="paso2.cp.$invalid-pattern && paso2.cp.$touched && paso2.cp.$valid-required">El código postal debe de contener solo números</p>
+					<button class="quiero waves-effect waves-button waves-float waves-dark" tylength="5" ng-pattern="/^[1-9]+[0-9]*$/">
+					<p classpe="submit">Quiero cash</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>
+			<a href="http://www.driveandcash.com.mx/privacidad/" target="_blank">Aviso de privacidad</a><br>
+			DriveAndCash.com.mx<br>
+			&copy; 2016 Todos los derechos reservados
+		</p>
+	</footer>
+	<!-- Modal -->
+	<section class="modal" ng-show="modal1">
+		<div class="contenedor">
+			<div class="panel">
+				<h2>Gracias por interesarte en Drive and Cash</h2>
+				<hr>
+				<p>Pero necesitamos la factura de tu auto, ó que tu auto no sea anterior al 2007</p>
+				<a href="#!" ng-click="cModal1()" class="quiero nar waves-effect waves-button waves-float waves-dark">Regresar</a>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="assets/js/angular-scroll.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+	<script src="assets/js/rzslider.min.js"></script>
+	<script src="assets/js/waves.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

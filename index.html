@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-app="driveLand">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Drive and Cash</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body ng-controller="mainCtrl">
+	<!-- header -->
+	<header>
+		<div class="contenedor">
+			<img src="assets/img/logo-drive.svg" alt="Logo Drive & Cash" class="logo">
+			<input type="checkbox" id="menu-bar">
+			<label for="menu-bar" class="icon-menu-2"></label>
+			<nav class="menu">
+				<ul>
+					<li ng-click="scroll1('como')"><a href="#!">¿Cómo funciona?</a></li>
+					<li ng-click="scroll1('necesito')"><a href="#!">Requisitos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header><!-- /header -->
+	<!-- main content -->
+	<main>
+		<section class="home">
+			<div class="contenedor">
+				<h1>Tu auto, tu dinero y tus planes</h1>
+				<p>Consigue el dinero que necesitas y sigue manejando tu auto</p>
+				<a href="#!" class="quiero waves-effect waves-button waves-float waves-dark">Quiero cash</a>
+			</div>
+			<div class="vermas" ng-click="scroll1('como')">
+				<a href="#!" title="Ver más" class="icon-down-open"> </a>
+			</div>
+		</section>
+		<section class="como" id="como">
+			<div class="contenedor">
+				<h2>
+					¿Cómo funciona?
+					<hr>
+				</h2>
+				<div class="bullets">
+					<div class="item">
+						<img src="assets/img/ico1.svg" alt="Llamas o visitas sucursal"><p>Llamas ó visitas una sucursal</p></div>
+					<div class="item">
+						<img src="assets/img/ico2.svg" alt="Valuamos tu auto"><p>Valuamos tu auto</p></div>
+					<div class="item">
+						<img src="assets/img/ico3.svg" alt="Aceptas propuesta"><p>Aceptas propuesta económica</p></div>
+					<div class="item">
+						<img src="assets/img/ico4.svg" alt="Recibes tu dinero y sigues manejando tu auto"><p>¡Listo! Recibes tu dinero y sigues manejando tu auto.</p></div>
+				</div>
+				<a href="#!" class="quiero nar waves-effect waves-button waves-float waves-dark">Quiero cash</a>
+			</div>
+		</section>
+		<section class="necesito" id="necesito">
+			<div class="flex">
+				<div class="item coche-chica">
+					
+				</div>
+				<div class="item">
+					<h2>
+						¿Qué necesito?
+						<hr>
+					</h2>
+					<ul>
+						<li><span class="tit">Factura</span><p>Drive and Cash trabaja con facturas originales</p></li>
+						<li><span class="tit">Tenencias pagadas</span><p>(Últimos 5 años)</p></li>
+						<li><span class="tit">Tarjeta de Circulación</span></li>
+						<li><span class="tit">Comprobante de domicilio</span><p>Agua, teléfono, luz últimos dos meses</p></li>
+						<li><span class="tit">Identificación Oficial</span><p>INE, IFE o pasaporte</p></li>
+						<li><span class="tit">Licencia de Conducir</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="contenedor mobile">
+				<h2>
+					¿Qué necesito?
+					<hr>
+				</h2>
+				<ul>
+					<li><span class="tit">Factura</span><p>Drive and Cash trabaja con facturas originales</p></li>
+					<li><span class="tit">Tenencias pagadas</span><p>(Últimos 5 años)</p></li>
+					<li><span class="tit">Tarjeta de Circulación</span></li>
+					<li><span class="tit">Comprobante de domicilio</span><p>Agua, teléfono, luz últimos dos meses</p></li>
+					<li><span class="tit">Identificación Oficial</span><p>INE, IFE o pasaporte</p></li>
+					<li><span class="tit">Licencia de Conducir</span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="viejito">
+			<div class="contenedor">
+				<p>
+					Más de 400,000 personas han conseguido el dinero que buscaban en una de nuestras 60 sucursales. <br>
+					¡Hazlo tú tambien!
+				</p>
+				<a href="#!" class="quiero nar waves-effect waves-button waves-float waves-dark">Quiero cash</a>
+			</div>
+			<img src="assets/img/autoazul.jpg" class="autoazul" alt="">
+		</section>
+	</main><!-- /main content -->
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="https://www.facebook.com/driveandcash" class="icon-facebook-circled" target="_blank"></a></li>
+				<li><a href="https://es.foursquare.com/user/135589314" class="icon-foursquare" target="_blank"></a></li>
+				<li><a href="https://www.youtube.com/channel/UCNHJOXk_a6qxN0ihpx8RuoA" class="icon-youtube-play" target="_blank"></a></li>
+			</ul>
+			<p>
+				<a href="http://www.driveandcash.com.mx/privacidad/" target="_blank">Aviso de privacidad</a><br>
+				DriveAndCash.com.mx<br>
+				&copy; 2016 Todos los derechos reservados
+			</p>
+		</div>
+	</footer><!-- footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="assets/js/angular-scroll.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+	<script src="assets/js/waves.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

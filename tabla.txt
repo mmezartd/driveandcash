@@ -1,0 +1,18 @@
+estructura de la tabla
+
+- id  			 autoincrementable
+- nombre		 string
+- telefono 		 string
+- celular 		 string
+- cp 			 int
+- estado 		 string
+- email  		 string
+- modelo auto 	 string
+- marca auto 	 string
+- año auto 		 int
+- term			 string
+- source		 string
+- comefrom		 string
+- landing		 string
+- created_at	 date
+- updated_at	 date

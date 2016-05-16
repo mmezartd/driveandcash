@@ -1,0 +1,24 @@
+footer{
+	background-color: $gris;
+	padding: 1rem;
+	ul{
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		a{
+			color: $grisc;
+			font-size: 1.5rem;
+			text-decoration: none;
+		}
+	}
+	p{
+		color: $color2;
+		font-size: 0.6666666666666em;
+		margin: 0.8em;
+		text-align: center;
+		a{
+			color: $cprinc;
+			text-decoration: none;
+		}
+	}
+}

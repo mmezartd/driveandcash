@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="down-open" unicode="&#xe803;" d="M0 533q0 25 18 43t44 18 42-18l305-303 304 303q18 18 43 18t43-18q18-18 18-43t-18-43l-390-391-391 391q-18 19-18 43z" horiz-adv-x="817.4" />
+
+<glyph glyph-name="youtube-play" unicode="&#xe806;" d="M714 350q0 21-16 30l-286 179q-17 11-36 1-19-10-19-31v-358q0-21 19-31 9-4 17-4 11 0 19 5l286 179q16 9 16 30z m286 0q0-54-1-84t-4-76-13-82q-9-41-38-69t-70-32q-123-14-374-14t-374 14q-40 4-70 32t-39 69q-7 36-12 82t-4 76-1 84 1 84 4 76 13 82q9 41 38 69t70 32q123 14 374 14t374-14q40-4 70-32t39-69q8-36 12-82t4-76 1-84z" horiz-adv-x="1000" />
+
+<glyph glyph-name="facebook-circled" unicode="&#xe808;" d="M0 350q0 95 37 182t100 149 150 100 182 37 182-37 149-100 100-149 37-182-37-182-100-150-149-100-182-37-182 37-150 100-100 150-37 182z m351 0h52v-253h105v253h70l9 87h-79v44q0 20 6 27t29 8h43v87h-70q-61 0-87-29t-26-85v-52h-52v-87z" horiz-adv-x="937.5" />
+
+<glyph glyph-name="foursquare" unicode="&#xe80b;" d="M558 608l21 108q2 13-5 22t-20 10h-397q-13 0-22-10t-8-20v-615q0-4 3 0l162 196q13 15 22 19t26 4h134q12 0 20 8t10 17q14 72 21 106 2 12-6 23t-21 10h-164q-16 0-26 11t-11 27v23q0 16 11 26t26 11h193q10 0 20 7t11 17z m127 124q-9-41-30-149t-39-195-19-97q-4-12-5-18t-8-18-14-19-21-12-33-5h-151q-7 0-12-6-5-5-238-275-12-14-33-16t-27 3q-30 12-30 54v787q0 31 21 57t67 27h495q53 0 71-30t6-88z m0 0l-88-441q2 9 19 97t39 195 30 149z" horiz-adv-x="714.3" />
+
+<glyph glyph-name="menu-1" unicode="&#xe80c;" d="M650 400q22 0 36-15t14-35-15-35-35-15l-600 0q-20 0-35 15t-15 35 14 35 36 15l600 0z m-600 100q-20 0-35 15t-15 35 14 35 36 15l600 0q22 0 36-15t14-35-15-35-35-15l-600 0z m600-300q22 0 36-15t14-35-15-35-35-15l-600 0q-20 0-35 15t-15 35 14 35 36 15l600 0z" horiz-adv-x="700" />
+
+<glyph glyph-name="menu-2" unicode="&#xe80d;" d="M68 62q0-30 21-51t51-21h793q30 0 51 21t21 51-21 51-51 21h-793q-29 0-51-21t-21-51z m0 288q0-30 21-51t51-21h793q30 0 51 21t21 51-21 51-51 21h-793q-29 0-51-21t-21-51z m0 288q0-30 21-51t51-21h793q30 0 51 21t21 51-21 51-51 21h-793q-29 0-51-21t-21-51z" horiz-adv-x="1073.2" />
+</font>
+</defs>
+</svg>

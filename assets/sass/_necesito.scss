@@ -1,0 +1,54 @@
+.necesito{
+	background-color: $grisc;
+	padding: 2rem 1rem;
+	.mobile{
+		display: block;
+	}
+	.flex{
+		display: none;
+	}
+	li{
+		color: $gris;
+		list-style: none;
+		margin: 0.5rem 0;
+    	&:before {
+		    content: "\002022";
+		    color: $cprinc;
+		    font-size: 1.5rem;
+		    padding-right: 0.7rem
+		}
+
+		.tit{
+			color: $gris3;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+		p{
+			font-size: 12px;
+			padding-left: 1.2rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.necesito{
+		padding:0;
+		.flex{
+			display: flex;
+			.item{
+				-webkit-flex: 1;
+			    flex: 1;
+			    -webkit-flex-basis: 0;
+			    flex-basis: 0;
+			    padding: 2rem;
+			}
+		}
+		.mobile{
+			display: none;
+		}
+		.item.coche-chica{
+			background: linear-gradient( rgba(31,20,15,0.7), rgba(31,20,15,0.7) ),url(../img/autochica.jpg) fixed no-repeat;
+			background-size: contain;
+		}
+	}
+}
